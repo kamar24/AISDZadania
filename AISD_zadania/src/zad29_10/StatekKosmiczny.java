@@ -16,7 +16,7 @@ public class StatekKosmiczny {
     static int [][] D = {{1,0,0,1,0},
                          {0,1,1,1,0},
                          {0,0,1,0,1},
-                         {1,2,0,0,1}};
+                         {1,1,0,0,1}};
     
     public static void planuj()
     {
@@ -35,19 +35,21 @@ public class StatekKosmiczny {
                 if (!rozw[i]) //jesli jeszcze nie zabrany
                 {
                     int lD = D[0][i] + D[1][i] + D[2][i] + D[3][i];
-
+                    
                     if (lD>maxlD)
                     {
-                        maxlD = maxlD; maxPoz = i;
+                        maxPoz = i;
                     };
                 }
             }
-
-            if (maxPoz>-1)
+            
+            
+            if (maxPoz>=0)
             {
                 for (int i=0; i<N; i++)
                 {
                   if (D[0][maxPoz]==1) rozwD[i]=true;
+                  
                 }
                 
 
