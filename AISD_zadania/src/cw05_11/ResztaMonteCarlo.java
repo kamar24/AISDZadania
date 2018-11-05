@@ -15,9 +15,9 @@ public class ResztaMonteCarlo {
         Scanner wejscie = new Scanner(System.in);
         String tekst;
         Random losuj = new Random();
-        final int[] MONETY = {1000,2000,5000,500, 200, 100, 50, 20, 10, 5, 2, 1};
+        final int[] MONETY = {500, 200, 100, 50, 20, 10, 5, 2, 1};
         final int LIMIT_WYDANYCH_MONET = 100;
-        final int LICZBA_LOSOWAN = 100;
+        final int LICZBA_LOSOWAN = 15;
         int minLiczbaWydanychMonet = LIMIT_WYDANYCH_MONET;
         int[] wydaneMonety = new int[LIMIT_WYDANYCH_MONET];
         int[] minWydaneMonety = new int[LIMIT_WYDANYCH_MONET];
